@@ -23,6 +23,7 @@ ii) Refer to sumArraysOnGPU-timer.cu, and let block.x = 256. Make a new kernel t
 6.Copy output data from the device to the host and verify the results against the host's sequential vector addition. Free memory on the host and the device.
 
 ## Program:
+```
 1. Block.x=1023
 
 #include "../common/common.h"
@@ -325,16 +326,19 @@ int main(int argc, char **argv)
     return(0);
 }
 
-
+```
 
 ## Output:
-1.	Block.x=1023
-	![IMG1](https://github.com/Ritika-2706/PCA-GPU-based-vector-summation.-Explore-the-differences./assets/93427238/466127cc-6c52-4380-a1e0-6a40255b2130)
+Block.x=1023
 
-2.	Block.x=1024
-	![IMG2](https://github.com/Ritika-2706/PCA-GPU-based-vector-summation.-Explore-the-differences./assets/93427238/d09e9910-4327-488e-b863-f84b132b9948)
+![IMG1](https://github.com/Ritika-2706/PCA-GPU-based-vector-summation.-Explore-the-differences./assets/93427238/466127cc-6c52-4380-a1e0-6a40255b2130)
 
-3.	Block.x=256
+Block.x=1024
+
+![IMG2](https://github.com/Ritika-2706/PCA-GPU-based-vector-summation.-Explore-the-differences./assets/93427238/d09e9910-4327-488e-b863-f84b132b9948)
+
+Block.x=256
+
 ![IMG3](https://github.com/Ritika-2706/PCA-GPU-based-vector-summation.-Explore-the-differences./assets/93427238/4ffd310c-e8b9-455e-aa65-45f6f73997dd)
 
 
